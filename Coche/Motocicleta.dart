@@ -4,7 +4,6 @@ class Motocicleta extends Vehiculo{
   String _matricula = "";
   int _ruedas = 2;
 
-  Motocicleta(this._matricula, this._ruedas);
 
   int get ruedas => _ruedas;
 
