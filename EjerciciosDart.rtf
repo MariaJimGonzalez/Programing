@@ -1,0 +1,185 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\froman\fprq2\fcharset0 Liberation Serif;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\hyphpar0\qc\kerning1\ul\b\f0\fs32 Relaci\'f3n de ejercicios 1\ulnone\b0\f1\fs24\par
+\b\f0\fs22\par
+
+\pard\nowidctlpar\hyphpar0\fs24 Para la entrega de los ejercicios, se crear\'e1 un repositorio privado y se compartir\'e1\b0\f1\par
+\b\f0 posteriormente con el profesor.\b0\f1\par
+\b\f0\par
+1. Crea un programa en el que declares y asignes todos los tipos predefinidos de\b0\f1\par
+\b\f0 variables que permite DART. Realiza operaciones matem\'e1ticas entre ellos y\b0\f1\par
+\b\f0 comprueba si puedes operar entre todos los tipos sin problemas.\b0\f1\par
+\b\f0\par
+\b0 void main() \{\f1\par
+\f0  int numero= 1;\f1\par
+\f0  int numero2 = 2;\f1\par
+\f0  double numero3 = 9;\f1\par
+\f0  String texto = 'hola';\f1\par
+\f0  dynamic nombre = 'Juan';\f1\par
+\f0  dynamic num = 5;\f1\par
+\f0   \f1\par
+\f0  int result = numero + numero2;\f1\par
+\f0  dynamic operation = numero3 + num;\f1\par
+\f0  \f1\par
+\f0   \f1\par
+\f0   print(operation);\f1\par
+\f0   \f1\par
+\f0   //Puede operarse entre variables diferentes siempre que sean n\'fameros.\f1\par
+\f0   \f1\par
+\f0\}\f1\par
+\b\f0\par
+2. Cuando se realiza una declaraci\'f3n sin realizar una asignaci\'f3n, se produce un error. Soluciona este error mediante el uso de null safe.\b0\f1\par
+\b\f0\par
+\par
+
+\pard\nowidctlpar\hyphpar0\sl228\slmult0\cf1\highlight2\b0 main ()\{\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? num = null;\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ double? num2 = null;\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ String? texto = null;\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ dynamic? dinamic = null;\cf0\highlight0\f1\par
+\cf1\highlight2\f0\}\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\b\f0\par
+3. Intenta concatenar un String con algunos valores enteros. Si no puedes realizarlo directamente, busca la forma en la que puedes realizarlo.\b0\f1\par
+\b\f0\par
+\b0 void main() \{\f1\par
+\f0  int numero= 1;\f1\par
+\f0  int numero2 = 2;\f1\par
+\f0  double numero3 = 9;\f1\par
+\f0  String texto = 'hola';\f1\par
+\f0  dynamic nombre = 'Juan';\f1\par
+\f0  dynamic num = 5;\f1\par
+\f0   \f1\par
+\f0 String cadena = numero.toString + texto;\f1\par
+\f0  \f1\par
+\f0   \f1\par
+\f0   print(cadena);\f1\par
+\f0   \f1\par
+\f0   //Se pueden concatenar enteros y cadenas usando la extensi\'f3n .toString\f1\par
+\f0   \f1\par
+\f0\}\f1\par
+\b\f0\par
+4. Realiza una funci\'f3n que se le pase un valor y salga por pantalla la tabla de multiplicar de ese n\'famero.\b0\f1\par
+\b\f0\par
+\b0 void main() \{\f1\par
+\f0  int numero= 3;\f1\par
+\f0\par
+  print(printMult(numero));\f1\par
+\f0  \f1\par
+\f0\}\f1\par
+\f0   printMult(int num) \{\f1\par
+\f0  \f1\par
+\f0     for (int i = 0; i <= 10; i++)\{\f1\par
+\f0      int mult = num * i;\f1\par
+\f0       print (mult);\f1\par
+\f0     \}\f1\par
+\f0   \f1\par
+\f0\}\f1\par
+\b\f0\par
+5. Crea un programa que reciba una lista de n\'fameros por teclado y los introduzca en un array. Visualiza los resultados.\b0\f1\par
+\par
+
+\pard\nowidctlpar\hyphpar0\sl228\slmult0\cf1\highlight2\f0\~ print("Introduce un n\'famero");\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? Num = int.parse(stdin.readLineSync()!);\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ print("Introduce otro n\'famero");\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? num1 = int.parse(stdin.readLineSync()!);\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ print("Introduce un \'faltimo n\'famero");\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? num2 = int.parse(stdin.readLineSync()!);\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ String? array = num.toString() + num1.toString() + num2.toString();\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ print(array);\cf0\highlight0\f1\par
+\cf1\highlight2\f0\}\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\cf1\f0\par
+\cf0\b\par
+6. Repite el ejercicio anterior impidiendo que se introduzca en el array valores\b0\f1\par
+\b\f0 repetidos.\b0\f1\par
+\b\f0\par
+\cf1\highlight2\b0 import 'dart:io';\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\sl228\slmult0\cf1\highlight2\f0 main()\{\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ print("Introduce un n\'famero");\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? num = int.parse(stdin.readLineSync()!);\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ print("Introduce otro n\'famero");\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? num1 = int.parse(stdin.readLineSync()!);\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ print("Introduce un \'faltimo n\'famero");\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ int? num2 = int.parse(stdin.readLineSync()!);\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ List<String>? array=[];\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ array?.add(num.toString());\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ array?.add(num1.toString());\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~array?.add(num2.toString());\cf0\highlight0\f1\par
+\cf1\highlight2\f0\par
+\~ var temp = Set<String>();\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ List<String> array2 = array.where((country) => temp.add(country)).toList();\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ array = array2;\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ print(array);\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \cf0\highlight0\f1\par
+\cf1\highlight2\f0\}\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\b\f0\par
+7. Crea un array con los valores del 1 al 50. Crea un nuevo array que recorra el array anterior e introduzca en el nuevo array los n\'fameros divisibles por 3.\b0\f1\par
+\par
+
+\pard\nowidctlpar\hyphpar0\sl228\slmult0\cf1\highlight2\f0 import 'dart:math';\cf0\highlight0\f1\par
+\cf1\highlight2\f0 main()\{\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ List<int>? Numeros  =[];\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ List<int>? divisores =[];\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\sa283\sl228\slmult0\cf1\f0\par
+
+\pard\nowidctlpar\hyphpar0\sl228\slmult0\highlight2\~ \~ for(int i = 1; i<=50; i++)\{\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ \~numeros.add(i);\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ \}\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ \~ for(int i = 0; i<= numeros.length; i++)\{\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ \~ double rest = numeros.indexOf(i) % (3);\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ \~ if(rest == 0)\{\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ \~ \~ divisores.add(numeros .indexOf(i));\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ \~ \}\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\sa283\sl228\slmult0\cf1\f0\par
+
+\pard\nowidctlpar\hyphpar0\sl228\slmult0\highlight2\~ \~ \}\cf0\highlight0\f1\par
+\cf1\f0\par
+\highlight2\~ \~ print(numeros);\cf0\highlight0\f1\par
+\cf1\highlight2\f0\~ \~ print(divisores);\cf0\highlight0\f1\par
+\cf1\highlight2\f0\}\cf0\highlight0\f1\par
+
+\pard\nowidctlpar\hyphpar0\cf1\f0\par
+
+\pard\sa200\sl276\slmult1\cf0\kerning0\f2\fs22\lang10\par
+
+\pard\sl240\slmult1\kerning1\b\f0\fs24\lang3082 12. \kerning0\f2\lang10 Investiga c\'f3mo podr\'eda generarse un valor aleatorio entre 1 y 10.\par
+\par
+\b0 main(List<String> arguments)\{\par
+  var random = Random();\par
+  int num = random.nextInt(10);\par
+  print(num);\par
+\b\par
+\par
+
+\pard\sl276\slmult1 13. Investiga c\'f3mo introducir valores por consola y realiza un ejercicio que realice esta tarea.\par
+\par
+\b0 print("Introduzca un n\'famero");\par
+  int? num1 = int.parse(stdin.readLineSync()!);\par
+  double resultado = num1 * num1;\par
+  print("El resultado de $num1 por s\'ed mismo es: $resultado");\par
+\par
+
+\pard\sa200\sl276\slmult1\b 14. Crea un ejercicio donde apliques los conocimientos adquiridos con Future, async y await.\par
+\b0 hola();\par
+  print("Hola!");\par
+\}\par
+Future<void> hola()async \{\par
+  return Future.delayed(const Duration(seconds: 15), () => print('no se pudo enviar'));\par
+\}\par
+\b\par
+\par
+}
+ 
